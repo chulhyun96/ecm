@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: Hello
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/ecommerce?serverTimezone=UTC&characterEncoding=UTF-8
+    username:
+    password: root
+    driverClassName: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  cloud:
+    openfeign:
+      okhttp:
+        enabled: true
+
+
+mailgun:
+  api:
+    key: 64b4fb5c843f61aeb736b378ac15893c-5dcb5e36-9ee8e997
+
+server:
+  port: 8081
