@@ -12,7 +12,7 @@ class EmailSendServiceTest {
 
     @Autowired
     EmailSendService emailSendService;
-
+    //이메일 안됨
     @Test
     @DisplayName("send e-mail")
     void doTest() {
