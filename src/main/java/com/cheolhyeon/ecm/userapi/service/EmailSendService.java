@@ -15,7 +15,7 @@ public class EmailSendService {
 
     public Response sendEmail() {
         return mailgunClient.sendEmail(SendEmailForm.builder()
-                .from("dmddkalsi@my.com")
+                .from("zerobase1234@google.com")
                 .to("tghy4@naver.com")
                 .subject("Test email")
                 .text("my text")
