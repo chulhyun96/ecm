@@ -32,7 +32,7 @@ spring:
 
 mailgun:
   api:
-    key: 64b4fb5c843f61aeb736b378ac15893c-5dcb5e36-9ee8e997
+    key: a51f5a7dcbe13391bcd8a9c53900fe34-d010bdaf-6d855d26
 
 server:
   port: 8081
